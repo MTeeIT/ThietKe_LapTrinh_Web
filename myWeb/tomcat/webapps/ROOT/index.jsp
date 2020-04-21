@@ -14,8 +14,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 --%>
-<!DOCTYPE html>
-<%@ page session="false" %>
+<%@ page session="false" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <%
 java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy");
 request.setAttribute("year", sdf.format(new java.util.Date()));
@@ -23,8 +22,10 @@ request.setAttribute("tomcatUrl", "https://tomcat.apache.org/");
 request.setAttribute("tomcatDocUrl", "/docs/");
 request.setAttribute("tomcatExamplesUrl", "/examples/");
 %>
+<!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8" />
         <title><%=request.getServletContext().getServerInfo() %></title>
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -54,9 +55,9 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                     <img src="tomcat.png" alt="[tomcat logo]" />
                     <div id="tasks">
                         <h3>Recommended Reading:</h3>
-                        <h4><a href="${tomcatDocUrl}security-howto.html">Security Considerations HOW-TO</a></h4>
-                        <h4><a href="${tomcatDocUrl}manager-howto.html">Manager Application HOW-TO</a></h4>
-                        <h4><a href="${tomcatDocUrl}cluster-howto.html">Clustering/Session Replication HOW-TO</a></h4>
+                        <h4><a href="${tomcatDocUrl}security-howto.html">Security Considerations How-To</a></h4>
+                        <h4><a href="${tomcatDocUrl}manager-howto.html">Manager Application How-To</a></h4>
+                        <h4><a href="${tomcatDocUrl}cluster-howto.html">Clustering/Session Replication How-To</a></h4>
                     </div>
                 </div>
                 <div id="actions">
@@ -127,7 +128,7 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                         <ul>
                             <li><a href="https://tomcat.apache.org/bugreport.html">Tomcat 7.0 Bug Database</a></li>
                             <li><a href="${tomcatDocUrl}api/index.html">Tomcat 7.0 JavaDocs</a></li>
-                            <li><a href="https://svn.apache.org/repos/asf/tomcat/tc7.0.x/">Tomcat 7.0 SVN Repository</a></li>
+                            <li><a href="https://github.com/apache/tomcat/tree/7.0.x">Tomcat 7.0 Git Repository at GitHub</a></li>
                         </ul>
                     </div>
                 </div>
@@ -182,7 +183,7 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                         <h4>Get Involved</h4>
                         <ul>
                             <li><a href="${tomcatUrl}getinvolved.html">Overview</a></li>
-                            <li><a href="${tomcatUrl}svn.html">SVN Repositories</a></li>
+                            <li><a href="${tomcatUrl}source.html">Source Repositories</a></li>
                             <li><a href="${tomcatUrl}lists.html">Mailing Lists</a></li>
                             <li><a href="https://wiki.apache.org/tomcat/FrontPage">Wiki</a></li>
                         </ul>

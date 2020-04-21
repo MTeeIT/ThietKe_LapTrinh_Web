@@ -13,7 +13,6 @@ if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\apache\scripts\ctl.bat (start /MIN 
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\openoffice\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\openoffice\scripts\ctl.bat START)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\apache-tomcat\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\apache-tomcat\scripts\ctl.bat START)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\resin\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\resin\scripts\ctl.bat START)
-if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jboss\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jboss\scripts\ctl.bat START)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jetty\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jetty\scripts\ctl.bat START)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\subversion\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\subversion\scripts\ctl.bat START)
 rem RUBY_APPLICATION_START
@@ -29,7 +28,6 @@ rem RUBY_APPLICATION_STOP
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\subversion\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\subversion\scripts\ctl.bat STOP)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jetty\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jetty\scripts\ctl.bat STOP)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\hypersonic\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\server\hsql-sample-database\scripts\ctl.bat STOP)
-if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jboss\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\jboss\scripts\ctl.bat STOP)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\resin\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\resin\scripts\ctl.bat STOP)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\apache-tomcat\scripts\ctl.bat (start /MIN /B /WAIT D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\apache-tomcat\scripts\ctl.bat STOP)
 if exist D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\openoffice\scripts\ctl.bat (start /MIN /B D:\HK2N3\ThietKe_LapTrinh_Web\myWeb\openoffice\scripts\ctl.bat STOP)

@@ -1,20 +1,20 @@
-###### ApacheFriends XAMPP Version 7.3.11 ######
+###### ApacheFriends XAMPP Version 7.2.28 ######
 
 Wichtig! PHP in diesem Paket benötigt die Microsoft Visual C++ 2015 Redistributable Erweiterung von
 http://www.microsoft.com/en-us/download/. Bitte stellen Sie sicher das die VC++ 2015
 Runtime Bibliothek auf Ihrem System installiert ist.
 
   + Apache 2.4.41
-  + MariaDB 10.4.8
-  + PHP 7.3.11 (VC15 X86 64bit thread safe) + PEAR
-  + phpMyAdmin 4.9.1
+  + MariaDB 10.4.11
+  + PHP 7.2.28 (VC15 X86 64bit thread safe) + PEAR
+  + phpMyAdmin 5.0.1
   + OpenSSL 1.1.0g
   + ADOdb 518a
   + Mercury Mail Transport System v4.62 (nicht in der Portable Version)
   + FileZilla FTP Server 0.9.41 (nicht in der Portable Version)
   + Webalizer 2.23-04 (nicht in der Portable Version)
   + Strawberry Perl 5.16.3.1 Portable
-  + Tomcat 7.0.96
+  + Tomcat 7.0.100
   + XAMPP Control Panel Version 3.2.4.
   + XAMPP mailToDisk 1.0 (schreibt verdendete Mails über PHP auf die Festplatte unter <xampp>\mailoutput. In der php.ini als Mail Default aktiviert.)
 
