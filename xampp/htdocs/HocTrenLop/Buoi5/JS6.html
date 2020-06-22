@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bắt Event</title>
+	<style>
+	#valid_name{
+		display: none;
+		color: red;
+	}
+	.container {
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	#tdiv{
+		display: none;
+	}
+	</style>
+	
+	<script>
+		function changeSearch ()
+	 	{
+			document.getElementById("search").style.backgroundColor = 'yellow';	
+		}
+		function onblurFunction(x)
+		{
+			if(x.value=="")
+			{
+				document.getElementById("valid_name").style.display="block";
+			}
+			else
+			{
+				document.getElementById("valid_name").style.display="none";
+			}
+		}
+		function XylyFunction()
+		{
+			var x = document.getElementById("tlink");
+			var y = document.getElementById("tdiv");
+
+			if(x.innerHTML== "Tìm kiếm nâng cao")
+				{
+					x.innerHTML = "Bỏ tìm kiếm nâng cao";
+					y.style.display="block";
+				}
+			else
+				{
+					x.innerHTML="Tìm kiếm nâng cao";
+					y.style.display="none";
+				}
+
+		return false;
+	}
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<form action="#" method="post">
+			<fieldset>
+				<h1>FORM TÌM KIẾM</h1>
+
+				<label for="search">Từ khóa: </label><br>
+
+				<input type="text" name="search" id="search" onfocus="changeSearch()" onblur="onblurFunction(this)"><br>
+
+				<span id="valid_name"> Bạn cần nhập thông tin vào trường này</span><br>
+
+				<a id="tlink"href="#"onclick="XylyFunction()">Tìm kiếm nâng cao</a><br><br>
+
+			<div id ="tdiv" oncblur="XylyFunction()">
+				<label for="select">Chọn Chuyên mục</label><br>
+				<select name="tinhtp" id="tinhtp">
+					<option value="TV">Công nghệ thông tin</option>
+					<option value="BT">Công trình xây dựng</option>
+					<option value="ST">Sư phạm</option>
+				</select>
+			</div><br><br><br>
+
+
+
+
+
+
+
+
+
+				<input type="button" name="submit" id="submit" value="Tìm kiếm">
+
+			</fieldset>
+		</form>	
+	</div>
+</body>
+</html>

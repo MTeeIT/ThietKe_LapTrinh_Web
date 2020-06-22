@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 10</title>
+	<script src="b10.js"></script>
+	<style>
+		span{
+			color: red;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="" method="POST" name="formDangKy" onsubmit="return validForm()">
+		<fieldset style="width: 500px;">
+			<h2>Đăng ký thành viên</h2>
+
+			<label for="username">Tên đăng nhập:</label><br>
+			<input type="text" name="username" id="username" onblur="blurSpan(this, 0)">
+			<span class="alert">*Vui lòng điền tên đăng nhập</span><br>
+
+			<label for="pass">Mật khẩu:</label><br>
+			<input type="password" name="pass" id="pass" onblur="blurSpan(this, 1)"><br>
+			<span class="alert">*Vui lòng điền mật khẩu</span><br>
+
+			<label for="birthday">Chọn ngày sinh:</label><br>
+			<input type="date" name="birthday" id="birthday" onblur="blurSpan(this, 2)"><br>
+			<span class="alert">*Vui lòng chọn ngày sinh</span><br>
+
+			<label>Chọn giới tính:</label><br>
+			<label for="male">Nam</label>
+			<input type="radio" name="gender" id="male" value="Nam" onclick="genderClick()">
+			<label for="female">Nữ</label>
+			<input type="radio" name="gender" id="female" value="Nữ" onclick="genderClick()"><br>
+			<span class="alert">*Vui lòng chọn giới tính</span><br>
+
+			<label for="city">Chọn tỉnh/thành phố:</label><br>
+			<select name="city" id="city" onblur="blurSpan(this, 4)">
+				<option value="" hidden selected>-- Lựa chọn --</option>
+				<option value="Trà Vinh">Trà Vinh</option>
+				<option value="Cà Mau">Cà Mau</option>
+				<option value="Bến Tre">Bến Tre</option>
+				<option value="Vĩnh Long">Vĩnh Long</option>
+				<option value="TP.HCM">TP.HCM</option>
+			</select><br>
+			<span class="alert">*Vui lòng chọn tỉnh/thành phố</span><br>
+			
+			<label>Lĩnh vực quan tâm:</label><br>
+			<label for="giaoDuc">Giáo dục</label>
+			<input type="checkbox" name="giaoDuc" id="giaoDuc" value="Giáo dục">
+			<label for="kinhTe">Kinh tế</label>
+			<input type="checkbox" name="kinhTe" id="kinhTe" value="Kinh tế">
+			<label for="sucKhoe">Sức khỏe</label>
+			<input type="checkbox" name="sucKhoe" id="sucKhoe" value="Sức khỏe">
+			<label for="nongNghiep">Nông nghiệp</label>
+			<input type="checkbox" name="nongNghiep" id="nongNghiep" value="Nông nghiệp"><br>
+			
+
+			<input type="submit" name="register" id="register" value="Đăng ký">
+			<input type="reset" name="reset" id="reset" value="Nhập lại">
+		</fieldset>
+	</form>
+
+</body>
+</html>
